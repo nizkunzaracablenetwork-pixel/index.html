@@ -1,0 +1,80 @@
+index.html
+<!DOCTYPE html><html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Office Portal App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #1f2937;
+      margin-bottom: 20px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+    .card h2 {
+      margin: 10px 0 0;
+      font-size: 18px;
+      color: #111827;
+    }
+    .icon {
+      font-size: 40px;
+    }
+    footer {
+      margin-top: 30px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📲 Office Work Portal</h1>  <div class="container">
+    <div class="card" onclick="openLink('https://forms.gle/WHMNi7ptUTmj7oCZ8')">
+      <div class="icon">💳</div>
+      <h2>Bill Submit 2026</h2>
+    </div><div class="card" onclick="openLink('https://forms.gle/sUnDoapwT3YR5QJXA')">
+  <div class="icon">📝</div>
+  <h2>Bhul Kora IP Details</h2>
+</div>
+
+<div class="card" onclick="openLink('https://portal.fenicyberlink.com/')">
+  <div class="icon">🌐</div>
+  <h2>Main ISP Portal</h2>
+</div>
+
+<div class="card" onclick="openLink('https://forms.gle/xMxHsyKkNQ6Vg2s59')">
+  <div class="icon">👤</div>
+  <h2>New Online Customer Create</h2>
+</div>
+
+  </div>  <footer>
+    © 2026 Your Office | Simple App Dashboard
+  </footer>  <script>
+    function openLink(url) {
+      window.open(url, '_blank');
+    }
+  </script></body>
+</html>
